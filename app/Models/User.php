@@ -38,12 +38,4 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function purchase()
-    {
-        return $this->hasMany('App\Models\Purchase');
-    }
-
-    public function transactions(){
-        return $this->hasOne(Transactions::class);
-    }
 }
